@@ -8,9 +8,30 @@
     }
 }
 
+@layer base {
+    h1, h2, h3, h4, h5, h6 {
+        color: #252B46;
+        font-weight: bold;
+    }
+}
+
+@layer base {
+    p, span {
+        color: #9194A1;
+        font-size: 18px;
+    }
+}
+
 @layer components {
     .button {
-        padding: 5px 12px;
-        border-radius: 8px;
+        padding: 12px 25px;
+        border-radius: 4px;
+        font-size: 13px;
+    }
+}
+
+@layer components {
+    .card {
+        @apply flex flex-col bg-white shadow-2xl w-[250px] p-5 text-center
     }
 }

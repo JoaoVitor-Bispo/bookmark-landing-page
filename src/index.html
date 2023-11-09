@@ -10,116 +10,130 @@
     <title>BookMark Landing Page</title>
 </head>
 <body>
-    <header class="bg-green-500">
+    <header class="flex py-8 px-12 items-center">
         <div>
-            <img src="../images/logo-bookmark.svg" alt="">
+            <img src="../images/logo-bookmark.svg" alt="" class="w-[190px]">
         </div>
 
-        <nav>
+        <span class="ml-auto"><img src="../images/icon-hamburger.svg" alt=""></span>
+        <nav class="space-x-4 hidden">
             <a href="">FEATURES</a>
             <a href="">PRICING</a>
             <a href="">CONTACT</a>
-            <button>LOGIN</button>
+            <button class="button bg-red-500 text-white">LOGIN</button>
         </nav>
     </header>
 
     <main>
-        <section>
-            <div>
-                <h1 class="font-['Rubik']">A Simple BookMark manager</h1>
+        <section class="mt-9 mb-[100px]">
+            <div class="text-center relative">
+                <div class="z-10"><img src="../images/illustration-hero.svg" alt="" class="w-[85%]"></div>
+                <div class="bg-blue-800 w-[300px] h-[200px] rounded-l-full absolute right-0 bottom-0 z-0"></div>
+            </div>
 
-                <p class="font-pattern">A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
+            <div class="w-[75%] text-center mx-auto">
+                <h1 class="text-4xl">A Simple BookMark manager</h1>
 
-                <div>
-                    <button>Get it on Chrome</button>
-                    <button>Get it on FireFox</button>
+                <p class="pt-5 pb-7">A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
+
+                <div class="space-x-2">
+                    <button class="button bg-blue-700 text-white">Get it on Chrome</button>
+                    <button class="button bg-white shadow-lg">Get it on FireFox</button>
                 </div>
             </div>
+        </section>
 
-            <div>
-                <img src="" alt="">
+        <section>
+            <div class="w-[80%] mx-auto text-center">
+                <h2 class="text-2xl mb-4">Features</h2>
+                <p>Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
+
+                <div class="my-9">
+                    <div class="py-4 border-b-2 border-t-2 hover:border-b-red-500">Simple Bookmarking</div>
+                    <div class="py-4 border-b-2 hover:border-red-500">Speedy Searching</div>
+                    <div class="py-4 border-b-2 hover:border-red-500">Easy Sharing</div>
+                </div>
             </div>
         </section>
 
         <section>
-            <h2>Features</h2>
+            <div><img src="../images/illustration-hero.svg" alt=""></div>
 
-            <p>Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
+            <div class="mx-auto text-center w-[80%]">
+                <h1 class="text-3xl">BookMark in one click</h1>
 
-            <div>
-                <div>Simple Bookmarking</div>
-                <div>Speedy Searching</div>
-                <div>Easy Sharing</div>
+                <p class="mt-4 mb-7">Bookmark in one click Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
+
+                <div><button class="button bg-blue-700 text-white">More Info</button></div>
             </div>
         </section>
 
-        <section>
-            <img src="" alt="">
-
-            <div>
-                <h1>BookMark in one click</h1>
-
-                <p>Bookmark in one click Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
-
-                <div><button>More Info</button></div>
-            </div>
-        </section>
-
-        <section>
-            <div>
-                <h2>Download the Extension</h2>
+        <section class="my-[100px]">
+            <div class="my-12 text-center w-[80%] mx-auto">
+                <h2 class="text-2xl">Download the Extension</h2>
 
                 <p>We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite you’d like us to prioritize.</p>
             </div>
 
-            <div>
-                <div>
-                    <img src="" alt="">
-                    <h3>Add to Chrome</h3>
+            <div class="space-y-6">
+                <div class="card mx-auto">
+                    <img src="../images/logo-chrome.svg" alt="" class="w-[90px] mx-auto">
+
+                    <h3 class="my-5 text-2xl font-bold">Add to Chrome</h3>
                     <span>Minimum Version</span>
-                    <button>Add & Install Extension</button>
+
+                    <img src="../images/bg-dots.svg" alt="" class="my-6">
+
+                    <button class="button bg-blue-700 text-white">Add & Install Extension</button>
                 </div>
 
-                <div>
-                    <img src="" alt="">
-                    <h3>Add to FireFox</h3>
+                <div class="card mx-auto">
+                    <img src="../images/logo-firefox.svg" alt="" class="w-[90px] mx-auto">
+
+                    <h3 class="my-5 text-xl font-bold">Add to FireFox</h3>
                     <span>Minimum Version</span>
-                    <button>Add & Install Extension</button>
+
+                    <img src="../images/bg-dots.svg" alt="" class="my-6">
+
+                    <button class="button bg-blue-700 text-white">Add & Install Extension</button>
                 </div>
 
-                <div>
-                    <img src="" alt="">
-                    <h3>Add to Opera</h3>
+                <div class="card mx-auto">
+                    <img src="../images/logo-opera.svg" alt="" class="w-[90px] mx-auto">
+
+                    <h3 class="my-5 text-2xl font-bold">Add to Opera</h3>
                     <span>Minimum Version</span>
-                    <button>Add & Install Extension</button>
+
+                    <img src="../images/bg-dots.svg" alt="" class="my-6">
+
+                    <button class="button bg-blue-700 text-white">Add & Install Extension</button>
                 </div>
             </div>
         </section>
 
-        <section>
-            <h1>Frequently Asked Questions</h1>
-
-            <p>Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email us.</p>
-
-            <ul>
-                <li>What is Bookmark?</li>
-                <li>How can i request a new Browser?</li>
-                <li>Is there a mobile app?</li>
-                <li>What about other chromium browsers</li>
-            </ul>
-
-            <div>
-                <button>More Info</button>
+        <section class="text-center">
+            <div class="w-[80%] mx-auto">
+                <h1 class="text-3xl">Frequently Asked Questions</h1>
+                <p class="my-5">Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email us.</p>
+                <ul class="mx-auto text-left">
+                    <li class="py-4 border-b-2 text-gray-800">What is Bookmark?</li>
+                    <li class="py-4 border-b-2 text-gray-800">How can i request a new Browser?</li>
+                    <li class="py-4 border-b-2 text-gray-800">Is there a mobile app?</li>
+                    <li class="py-4 border-b-2 text-gray-800">What about other chromium browsers</li>
+                </ul>
+                <div>
+                    <button class="button bg-blue-700 text-white my-14">More Info</button>
+                </div>
             </div>
         </section>
 
-        <section>
-            <h4>35,000+ ALREADY JOINED</h4>
-            <h1>Stay up-to-date with what we’re doing</h1>
+        <section class="text-center bg-blue-700 p-9">
+            <h4 class="text-white text-[14px] tracking-widest">35,000+ ALREADY JOINED</h4>
+            <h1 class="text-2xl text-white my-4">Stay up-to-date with what we’re doing</h1>
 
-            <div>
-                <input type="text">
-                <button>Contact Us</button>
+            <div class="space-y-4">
+                <div><input type="text" placeholder="Enter your email address" class="p-4 text-left rounded-md"></div>
+                <div><button class="button bg-red-500 text-white">Contact Us</button></div>
             </div>
         </section>
 
