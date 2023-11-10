@@ -10,13 +10,13 @@
     <title>BookMark Landing Page</title>
 </head>
 <body>
-    <header class="flex py-8 px-12 items-center">
+    <header class="flex py-8 px-12 items-center md:justify-between">
         <div>
             <img src="../images/logo-bookmark.svg" alt="" class="w-[190px]">
         </div>
 
-        <span class="ml-auto"><img src="../images/icon-hamburger.svg" alt=""></span>
-        <nav class="space-x-4 hidden">
+        <span class="ml-auto md:hidden"><img src="../images/icon-hamburger.svg" alt=""></span>
+        <nav class="space-x-4 hidden md:block">
             <a href="">FEATURES</a>
             <a href="">PRICING</a>
             <a href="">CONTACT</a>
@@ -25,61 +25,65 @@
     </header>
 
     <main>
-        <section class="mt-9 mb-[100px]">
+        <section class="mt-9 mb-[100px] md:flex flex-row-reverse md:mt-[80px]">
             <div class="text-center relative">
-                <div class="z-10"><img src="../images/illustration-hero.svg" alt="" class="w-[85%]"></div>
-                <div class="bg-blue-800 w-[300px] h-[200px] rounded-l-full absolute right-0 bottom-0 z-0"></div>
+                <div class="z-10"><img src="../images/illustration-hero.svg" alt="" class="w-[85%] md:w-[70%] max-w-[600px] md:ml-[50px]"></div>
+
+                <div class="bg-blue-800 w-[300px] h-[200px] rounded-l-full absolute right-0 bottom-0 z-0 md:w-[45%] md:h-[120px]"></div>
             </div>
 
-            <div class="w-[75%] text-center mx-auto">
-                <h1 class="text-4xl">A Simple BookMark manager</h1>
+            <div class="w-[75%] text-left mx-auto md:w-[73%] md:max-w-[400px] md:ml-[50px] md:mt-[20px]">
+                <h1 class="text-4xl md:text-xl">A Simple BookMark manager</h1>
 
-                <p class="pt-5 pb-7">A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
+                <p class="pt-5 pb-7 md:text-[14px]">A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
 
-                <div class="space-x-2">
-                    <button class="button bg-blue-700 text-white">Get it on Chrome</button>
-                    <button class="button bg-white shadow-lg">Get it on FireFox</button>
+                <div class="space-x-5 text-center flex justify-center md:justify-start">
+                    <div><button class="button bg-blue-700 text-white">Get it on Chrome</button></div>
+                    <div><button class="button bg-white shadow-lg">Get it on FireFox</button></div>
                 </div>
             </div>
         </section>
 
         <section>
-            <div class="w-[80%] mx-auto text-center">
+            <div class="w-[80%] mx-auto text-center md:w-[500px]">
                 <h2 class="text-2xl mb-4">Features</h2>
                 <p>Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
 
-                <div class="my-9">
-                    <div class="py-4 border-b-2 border-t-2 hover:border-b-red-500">Simple Bookmarking</div>
-                    <div class="py-4 border-b-2 hover:border-red-500">Speedy Searching</div>
-                    <div class="py-4 border-b-2 hover:border-red-500">Easy Sharing</div>
+                <div class="my-9 md:flex md:space-x-4 md:border-b-2">
+                    <div class="py-4 md:hover-b-2 md:hover:border-red-500 md:px-3">Simple Bookmarking</div>
+                    <div class="py-4 md:hover-b-2 md:hover:border-red-500 md:px-3">Speedy Searching</div>
+                    <div class="py-4 md:hover-b-2 md:hover:border-red-500 md:px-3">Easy Sharing</div>
                 </div>
             </div>
         </section>
 
-        <section>
-            <div><img src="../images/illustration-hero.svg" alt=""></div>
+        <section class="md:flex md:mt-[100px]">
+            <div class="relative">
+                <img src="../images/illustration-hero.svg" alt="" class="md:w-[85%]">
+                <div class="bg-blue-800 w-[300px] h-[200px] rounded-r-full absolute left-0 bottom-0 z-0 md:w-[45%] md:h-[120px]"></div>
+            </div>
 
-            <div class="mx-auto text-center w-[80%]">
-                <h1 class="text-3xl">BookMark in one click</h1>
+            <div class="mx-auto text-left w-[80%] md:w-[60%] md:max-w-[400px] md:mr-[40px] md:mt-[15px]">
+                <h1 class="text-3xl md:text-xl">BookMark in one click</h1>
 
-                <p class="mt-4 mb-7">Bookmark in one click Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
+                <p class="mt-4 mb-7 md:text-[15px]">Bookmark in one click Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
 
                 <div><button class="button bg-blue-700 text-white">More Info</button></div>
             </div>
         </section>
 
-        <section class="my-[100px]">
-            <div class="my-12 text-center w-[80%] mx-auto">
+        <section class="my-[100px] md:px-4">
+            <div class="my-12 text-center w-[80%] mx-auto md:w-[560px]">
                 <h2 class="text-2xl">Download the Extension</h2>
 
                 <p>We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite you’d like us to prioritize.</p>
             </div>
 
-            <div class="space-y-6">
-                <div class="card mx-auto">
+            <div class="space-y-9 md:flex justify-center md:space-x-5">
+                <div class="card mx-auto md:mx-0">
                     <img src="../images/logo-chrome.svg" alt="" class="w-[90px] mx-auto">
 
-                    <h3 class="my-5 text-2xl font-bold">Add to Chrome</h3>
+                    <h3 class="my-5 text-xl font-bold">Add to Chrome</h3>
                     <span>Minimum Version</span>
 
                     <img src="../images/bg-dots.svg" alt="" class="my-6">
@@ -87,7 +91,7 @@
                     <button class="button bg-blue-700 text-white">Add & Install Extension</button>
                 </div>
 
-                <div class="card mx-auto">
+                <div class="card mx-auto md:mx-0">
                     <img src="../images/logo-firefox.svg" alt="" class="w-[90px] mx-auto">
 
                     <h3 class="my-5 text-xl font-bold">Add to FireFox</h3>
@@ -98,7 +102,7 @@
                     <button class="button bg-blue-700 text-white">Add & Install Extension</button>
                 </div>
 
-                <div class="card mx-auto">
+                <div class="card mx-auto md:mx-0">
                     <img src="../images/logo-opera.svg" alt="" class="w-[90px] mx-auto">
 
                     <h3 class="my-5 text-2xl font-bold">Add to Opera</h3>
@@ -112,7 +116,7 @@
         </section>
 
         <section class="text-center">
-            <div class="w-[80%] mx-auto">
+            <div class="w-[80%] mx-auto max-w-[600px]">
                 <h1 class="text-3xl">Frequently Asked Questions</h1>
                 <p class="my-5">Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email us.</p>
                 <ul class="mx-auto text-left">
