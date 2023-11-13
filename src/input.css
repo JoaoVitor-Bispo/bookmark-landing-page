@@ -35,3 +35,8 @@
         @apply flex flex-col bg-white shadow-2xl w-[250px] p-5 text-center
     }
 }
+@layer components {
+    .selected {
+        @apply border-b-[4px] border-red-500 text-red-500
+    }
+}

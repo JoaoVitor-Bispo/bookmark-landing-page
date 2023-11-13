@@ -17,29 +17,29 @@
 
         <span class="ml-auto md:hidden"><img src="../images/icon-hamburger.svg" alt=""></span>
         <nav class="space-x-4 lg:space-x-8 hidden md:block">
-            <a href="">FEATURES</a>
-            <a href="">PRICING</a>
-            <a href="">CONTACT</a>
-            <button class="button bg-red-500 text-white">LOGIN</button>
+            <a href="" class="text-gray-500 hover:text-pattern-blue-600">FEATURES</a>
+            <a href="" class="text-gray-500 hover:text-pattern-blue-600">PRICING</a>
+            <a href="" class="text-gray-500 hover:text-pattern-blue-600">CONTACT</a>
+            <button class="button bg-red-500 text-white hover:bg-red-700">LOGIN</button>
         </nav>
     </header>
 
     <main>
         <section class="mt-9 mb-[100px] md:flex md:flex-row-reverse md:mt-[80px]">
-                <div class="z-10 text-right relative md:w-[65%] md:max-w-[400px] md:ml-[40px] lg:max-w-[600px]">
-                    <img src="../images/illustration-hero.svg" alt="" class="w-[100%]">
+                <div class="z-10 relative md:w-[65%] md:max-w-[400px] md:ml-[40px] lg:max-w-[600px]">
+                    <img src="../images/illustration-hero.svg" alt="" class="w-[80%] max-w-[550px] mx-auto md:w-[100%]">
 
-                    <div class="bg-blue-800 w-[300px] h-[200px] rounded-l-full absolute right-0 bottom-0 z-0 md:w-[45%] md:h-[120px] lg:w-[70%] lg:max-w-[400px] lg:h-[250px]"></div>
+                    <div class="bg-pattern-blue-500 w-[300px] h-[200px] rounded-l-full absolute right-0 bottom-0 z-0 md:w-[70%] md:h-[200px] lg:w-[70%] lg:max-w-[400px] lg:h-[250px]"></div>
                 </div>
 
 
-            <div class="w-[75%] text-left mx-auto md:max-w-[350px] md:mx-0 md:mr-[70px] md:ml-[25px] md:mt-[20px] lg:w-[60%] lg:max-w-[470px]">
+            <div class="w-[75%] text-left mx-auto mt-5 md:max-w-[350px] md:mx-0 md:mr-[70px] md:ml-[25px] md:mt-[20px] lg:w-[60%] lg:max-w-[470px]">
                 <h1 class="text-4xl md:text-xl lg:text-4xl">A Simple BookMark manager</h1>
 
                 <p class="pt-5 pb-7 md:text-[14px] lg:text-[18px]">A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
 
                 <div class="space-x-5 text-center flex justify-center md:justify-start">
-                    <div><button class="button bg-blue-700 text-white">Get it on Chrome</button></div>
+                    <div><button class="button bg-pattern-blue-500 hover:bg-pattern-blue-600 text-white hover:bg-pattern-blue-600">Get it on Chrome</button></div>
                     <div><button class="button bg-white shadow-lg">Get it on FireFox</button></div>
                 </div>
             </div>
@@ -50,37 +50,38 @@
                 <h2 class="text-2xl mb-4">Features</h2>
                 <p>Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
 
-                <div class="my-9 md:flex justify-center md:space-x-4 md:border-b-2">
-                    <div class="py-4 md:hover-b-2 md:hover:border-red-500 md:px-3">Simple Bookmarking</div>
-                    <div class="py-4 md:hover-b-2 md:hover:border-red-500 md:px-3">Speedy Searching</div>
-                    <div class="py-4 md:hover-b-2 md:hover:border-red-500 md:px-3">Easy Sharing</div>
+                <div class="my-9 md:flex justify-center md:space-x-4 md:border-b-2 js-features">
+                    <div class="py-4 md:px-3 hover:text-red-500 hover:cursor-pointer selected">Simple Bookmarking</div>
+                    <div class="py-4 md:px-3 hover:text-red-500 hover:cursor-pointer">Speedy Searching</div>
+                    <div class="py-4 md:px-3 hover:text-red-500 hover:cursor-pointer">Easy Sharing</div>
                 </div>
             </div>
         </section>
 
         <section class="md:flex md:mt-[100px]">
-            <div class="relative">
-                <img src="../images/illustration-hero.svg" alt="" class="md:w-[90%] md:max-w-[500px] lg:ml-[40px] lg:max-w-[600px]">
-                <div class="bg-blue-800 w-[300px] h-[200px] rounded-r-full absolute left-0 bottom-0 z-0 md:w-[45%] md:h-[120px] lg:w-[70%] lg:max-w-[500px] lg:h-[250px]"></div>
+            <div class="relative md:mr-[20px]">
+                <img src="../images/illustration-hero.svg" alt="" class="w-[80%] max-w-[550px] mx-auto md:w-[90%] md:max-w-[500px] lg:ml-[40px] lg:max-w-[600px] js-featuresImage">
+
+                <div class="bg-pattern-blue-500 w-[65%] h-[200px] rounded-r-full absolute left-0 bottom-0 z-0 md:w-[70%] md:h-[190px] lg:w-[70%] lg:max-w-[500px] lg:h-[250px]"></div>
             </div>
 
-            <div class="mx-auto text-left w-[80%] md:w-[60%] md:max-w-[400px] md:mr-[40px] md:mt-[15px] lg:mr-[100px]">
-                <h1 class="text-3xl md:text-xl lg:text-3xl">BookMark in one click</h1>
+            <div class="mx-auto mt-8 text-left w-[80%] md:w-[60%] md:max-w-[400px] md:mr-[40px] md:mt-[15px] lg:mr-[100px]">
+                <h1 class="text-3xl md:text-xl lg:text-3xl js-featuresTitle">BookMark in one click</h1>
 
-                <p class="mt-4 mb-7 md:text-[15px] lg:text-[18px]">Bookmark in one click Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
+                <p class="mt-4 mb-7 md:text-[15px] lg:text-[18px] js-featuresContent">Bookmark in one click Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
 
-                <div><button class="button bg-blue-700 text-white">More Info</button></div>
+                <div><button class="button bg-pattern-blue-500 hover:bg-pattern-blue-600 text-white">More Info</button></div>
             </div>
         </section>
 
-        <section class="my-[100px] md:px-4">
+        <section class="mt-[100px] mb-[135px] md:px-4">
             <div class="my-12 text-center w-[80%] mx-auto md:w-[560px]">
-                <h2 class="text-2xl">Download the Extension</h2>
+                <h2 class="text-2xl md:mb-4">Download the Extension</h2>
 
                 <p>We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite you’d like us to prioritize.</p>
             </div>
 
-            <div class="space-y-9 md:flex justify-center md:space-x-5">
+            <div class="space-y-9 md:flex justify-center md:space-y-0 md:space-x-5 lg:space-x-12">
                 <div class="card mx-auto md:mx-0">
                     <img src="../images/logo-chrome.svg" alt="" class="w-[90px] mx-auto">
 
@@ -89,7 +90,7 @@
 
                     <img src="../images/bg-dots.svg" alt="" class="my-6">
 
-                    <button class="button bg-blue-700 text-white">Add & Install Extension</button>
+                    <button class="button bg-pattern-blue-500 hover:bg-pattern-blue-600 text-white">Add & Install Extension</button>
                 </div>
 
                 <div class="card mx-auto md:mx-0">
@@ -100,18 +101,18 @@
 
                     <img src="../images/bg-dots.svg" alt="" class="my-6">
 
-                    <button class="button bg-blue-700 text-white">Add & Install Extension</button>
+                    <button class="button bg-pattern-blue-500 hover:bg-pattern-blue-600 text-white">Add & Install Extension</button>
                 </div>
 
                 <div class="card mx-auto md:mx-0">
                     <img src="../images/logo-opera.svg" alt="" class="w-[90px] mx-auto">
 
-                    <h3 class="my-5 text-2xl font-bold">Add to Opera</h3>
+                    <h3 class="my-5 text-xl font-bold">Add to Opera</h3>
                     <span>Minimum Version</span>
 
                     <img src="../images/bg-dots.svg" alt="" class="my-6">
 
-                    <button class="button bg-blue-700 text-white">Add & Install Extension</button>
+                    <button class="button bg-pattern-blue-500 hover:bg-pattern-blue-600 text-white">Add & Install Extension</button>
                 </div>
             </div>
         </section>
@@ -120,40 +121,70 @@
             <div class="w-[80%] mx-auto max-w-[600px]">
                 <h1 class="text-3xl">Frequently Asked Questions</h1>
                 <p class="my-5">Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email us.</p>
-                <ul class="mx-auto text-left">
-                    <li class="py-4 border-b-2 text-gray-800">What is Bookmark?</li>
-                    <li class="py-4 border-b-2 text-gray-800">How can i request a new Browser?</li>
-                    <li class="py-4 border-b-2 text-gray-800">Is there a mobile app?</li>
-                    <li class="py-4 border-b-2 text-gray-800">What about other chromium browsers</li>
-                </ul>
+                <div class="mx-auto text-left">
+                    <div class="py-4">
+                        <div class="flex justify-between text-[18px] border-b-2 text-gray-800 pb-3 hover:cursor-pointer hover:text-red-500 js-questions">What is Bookmark?<img src="../images/icon-arrow.svg" alt="" class="w-[20px] h-[15px]"></div>
+
+                        <p class="text-[15px] pt-4 hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero error temporibus doloremque est? Quas rerum dignissimos quaerat, tempore blanditiis, corrupti dolorem, deserunt in perspiciatis mollitia esse nulla veniam excepturi qui!</p>
+                    </div>
+
+                    <div class="py-4">
+                        <div class="flex justify-between text-[18px] border-b-2 text-gray-800 pb-3 hover:cursor-pointer hover:text-red-500 js-questions">
+                            How can i request a new Browser?
+                            <img src="../images/icon-arrow.svg" alt="" class="w-[20px] h-[15px]">
+                        </div>
+
+                        <p class="text-[15px] pt-4 hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero error temporibus doloremque est? Quas rerum dignissimos quaerat, tempore blanditiis, corrupti dolorem, deserunt in perspiciatis mollitia esse nulla veniam excepturi qui!</p>
+                    </div>
+
+                    <div class="py-4">
+                        <div class="flex justify-between text-[18px] border-b-2 text-gray-800 pb-3 hover:cursor-pointer hover:text-red-500 js-questions">Is there a mobile app?<img src="../images/icon-arrow.svg" alt="" class="w-[20px] h-[15px]"></div>
+
+                        <p class="text-[15px] pt-4 hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero error temporibus doloremque est? Quas rerum dignissimos quaerat, tempore blanditiis, corrupti dolorem, deserunt in perspiciatis mollitia esse nulla veniam excepturi qui!</p>
+                    </div>
+
+                    <div class="py-4">
+                        <div class="flex justify-between text-[18px] border-b-2 text-gray-800 pb-3 hover:cursor-pointer hover:text-red-500 js-questions">What about other chromium browsers<img src="../images/icon-arrow.svg" alt="" class="w-[20px] h-[15px]"></div>
+
+                        <p class="text-[15px] pt-4 hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero error temporibus doloremque est? Quas rerum dignissimos quaerat, tempore blanditiis, corrupti dolorem, deserunt in perspiciatis mollitia esse nulla veniam excepturi qui!</p>
+                    </div>
+                </div>
+
                 <div>
-                    <button class="button bg-blue-700 text-white my-14">More Info</button>
+                    <button class="button bg-pattern-blue-500 hover:bg-pattern-blue-600 text-white my-14">More Info</button>
                 </div>
             </div>
         </section>
 
-        <section class="text-center bg-blue-700 p-9">
+        <section class="text-center bg-pattern-blue-500 py-[80px]">
             <h4 class="text-white text-[14px] tracking-widest">35,000+ ALREADY JOINED</h4>
-            <h1 class="text-2xl text-white my-4">Stay up-to-date with what we’re doing</h1>
+            <h1 class="text-4xl text-white my-9">Stay up-to-date with what we’re doing</h1>
 
             <div class="space-y-4 md:flex justify-center items-center md:space-y-0 md:space-x-5">
-                <div><input type="text" placeholder="Enter your email address" class="p-4 text-left rounded-md"></div>
-                <div><button class="button bg-red-500 text-white">Contact Us</button></div>
+                <form><input type="email" id="email" autocomplete="on" placeholder="Enter your email address" class="p-4 text-left rounded-md"></form>
+
+                <div><button class="button bg-red-500 text-white hover:bg-red-700">Contact Us</button></div>
             </div>
         </section>
 
-        <footer>
+        <footer class="bg-pattern-blue-800 py-[60px] flex flex-col items-center space-y-8 md:flex-row justify-evenly items-start md:py-[30px]">
             <div>
-                <img src="" alt="">
+                <img src="../images/logo-footer.svg" alt="" class="w-[190px]">
             </div>
     
-            <nav>
-                <a href="">FEATURES</a>
-                <a href="">PRICING</a>
-                <a href="">CONTACT</a>
-                <button></button>
-            </nav>    
+            <ul class="space-y-4 text-center text-white md:flex flex-row items-center md:space-y-0 md:space-x-8">
+                <li><a href="">FEATURES</a></li>
+                <li><a href="">PRICING</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+
+            <div class="flex items-center space-x-8">
+                <a href=""><img src="../images/icon-facebook.svg" alt=""></a>
+                <a href=""><img src="../images/icon-twitter.svg" alt=""></a>
+            </div>
         </footer>
     </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
