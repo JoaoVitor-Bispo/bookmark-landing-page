@@ -3,10 +3,28 @@ const featuresTitle = document.querySelector('.js-featuresTitle')
 const featuresContent = document.querySelector('.js-featuresContent')
 const featuresImage = document.querySelector('.js-featuresImage')
 const questions = [...document.querySelectorAll('.js-questions')]
+const menu = document.querySelector('.js-menu')
+const mobileNav = document.querySelector('.js-mobileNav')
+
+let menuImage = false
+
+menu.addEventListener('click', e => {
+    menuImage === false ? menuImage = true : menuImage = false
+    mobileNav.classList.toggle('hidden')
+
+    if(menuImage == true) {
+        menu.children[0].src = `../images/icon-close.svg`
+        document.querySelector('.js-firstSection').style.opacity = '0.6'
+        return false
+    }
+
+    menu.children[0].src = `../images/icon-hamburger.svg`
+    document.querySelector('.js-firstSection').style.opacity = '1'
+})
 
 features.map((feature, index) => {
     feature.addEventListener('click', e => {
-        feature == e.target ? feature.classList.add('selected') : feature.classList.remove('selected')
+        [...e.target.parentNode.children].forEach(children => children == e.target ? children.classList.add('selected') : children.classList.remove('selected'))
 
         if(index == 0) {
             featuresTitle.innerHTML = `BookMark in one click`

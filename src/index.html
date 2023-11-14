@@ -15,8 +15,15 @@
             <img src="../images/logo-bookmark.svg" alt="" class="w-[190px]">
         </div>
 
-        <span class="ml-auto md:hidden"><img src="../images/icon-hamburger.svg" alt=""></span>
-        <nav class="space-x-4 lg:space-x-8 hidden md:block">
+        <span class="bg-gray-300 ml-auto p-2 rounded-full md:hidden hover:bg-gray-500 js-menu"><img src="../images/icon-hamburger.svg" alt=""></span>
+        <div class="flex flex-col items-center justify-center py-[25px] w-[400px] space-y-5 bg-gray-200 absolute top-[80px] rounded-lg shadow-lg z-20 hidden js-mobileNav">
+            <a href="" class="text-gray-600 hover:text-pattern-blue-600">FEATURES</a>
+            <a href="" class="text-gray-600 hover:text-pattern-blue-600">PRICING</a>
+            <a href="" class="text-gray-600 hover:text-pattern-blue-600">CONTACT</a>
+            <button class="button bg-red-500 text-white hover:bg-red-700">LOGIN</button>
+        </div>
+
+        <nav class="space-x-4 lg:space-x-8 hidden md:block js-nav">
             <a href="" class="text-gray-500 hover:text-pattern-blue-600">FEATURES</a>
             <a href="" class="text-gray-500 hover:text-pattern-blue-600">PRICING</a>
             <a href="" class="text-gray-500 hover:text-pattern-blue-600">CONTACT</a>
@@ -25,13 +32,12 @@
     </header>
 
     <main>
-        <section class="mt-9 mb-[100px] md:flex md:flex-row-reverse md:mt-[80px]">
-                <div class="z-10 relative md:w-[65%] md:max-w-[400px] md:ml-[40px] lg:max-w-[600px]">
-                    <img src="../images/illustration-hero.svg" alt="" class="w-[80%] max-w-[550px] mx-auto md:w-[100%]">
-
-                    <div class="bg-pattern-blue-500 w-[300px] h-[200px] rounded-l-full absolute right-0 bottom-0 z-0 md:w-[70%] md:h-[200px] lg:w-[70%] lg:max-w-[400px] lg:h-[250px]"></div>
+        <section class="relative mt-9 mb-[100px] md:flex md:flex-row-reverse md:mt-[80px] js-firstSection">
+                <div class="relative z-20 md:w-[65%] md:max-w-[400px] md:ml-[40px] lg:max-w-[600px]">
+                    <img src="../images/illustration-hero.svg" alt="" class="w-[80%] max-w-[400px] mx-auto md:w-[100%] md:max-w-none">
                 </div>
 
+                <div class="z-0 bg-pattern-blue-500 w-[70%] h-[40%] rounded-l-full absolute right-0 top-[10%] md:bottom-0 md:w-[35%] md:h-[70%] md:top-[20%] lg:w-[70%] lg:max-w-[450px] lg:h-[80%]"></div>
 
             <div class="w-[75%] text-left mx-auto mt-5 md:max-w-[350px] md:mx-0 md:mr-[70px] md:ml-[25px] md:mt-[20px] lg:w-[60%] lg:max-w-[470px]">
                 <h1 class="text-4xl md:text-xl lg:text-4xl">A Simple BookMark manager</h1>
@@ -40,7 +46,7 @@
 
                 <div class="space-x-5 text-center flex justify-center md:justify-start">
                     <div><button class="button bg-pattern-blue-500 hover:bg-pattern-blue-600 text-white hover:bg-pattern-blue-600">Get it on Chrome</button></div>
-                    <div><button class="button bg-white shadow-lg">Get it on FireFox</button></div>
+                    <div><button class="button bg-white shadow-lg hover:bg-gray-300">Get it on FireFox</button></div>
                 </div>
             </div>
         </section>
@@ -58,14 +64,15 @@
             </div>
         </section>
 
-        <section class="md:flex md:mt-[100px]">
-            <div class="relative md:mr-[20px]">
-                <img src="../images/illustration-hero.svg" alt="" class="w-[80%] max-w-[550px] mx-auto md:w-[90%] md:max-w-[500px] lg:ml-[40px] lg:max-w-[600px] js-featuresImage">
+        <section class="relative md:flex md:mt-[100px]">
+            <div class="relative md:mr-[20px] z-10">
+                <img src="../images/illustration-features-tab-0.svg" alt="" class="w-[80%] max-w-[400px] mx-auto md:w-[90%] md:max-w-[500px] lg:ml-[40px] lg:max-w-[600px] js-featuresImage">
 
-                <div class="bg-pattern-blue-500 w-[65%] h-[200px] rounded-r-full absolute left-0 bottom-0 z-0 md:w-[70%] md:h-[190px] lg:w-[70%] lg:max-w-[500px] lg:h-[250px]"></div>
             </div>
 
-            <div class="mx-auto mt-8 text-left w-[80%] md:w-[60%] md:max-w-[400px] md:mr-[40px] md:mt-[15px] lg:mr-[100px]">
+            <div class="bg-pattern-blue-500 w-[70%] h-[45%] rounded-r-full absolute left-0 bottom-[48%] z-0 md:w-[40%] md:h-[90%] md:bottom-[-30px] lg:w-[45%] lg:max-w-[500px]"></div>
+
+            <div class="mx-auto mt-[60px] text-left w-[80%] md:w-[60%] md:max-w-[400px] md:mr-[40px] md:mt-[15px] lg:mr-[100px]">
                 <h1 class="text-3xl md:text-xl lg:text-3xl js-featuresTitle">BookMark in one click</h1>
 
                 <p class="mt-4 mb-7 md:text-[15px] lg:text-[18px] js-featuresContent">Bookmark in one click Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
@@ -156,7 +163,7 @@
             </div>
         </section>
 
-        <section class="text-center bg-pattern-blue-500 py-[80px]">
+        <section class="text-center bg-pattern-blue-500 py-[80px] px-[40px]">
             <h4 class="text-white text-[14px] tracking-widest">35,000+ ALREADY JOINED</h4>
             <h1 class="text-4xl text-white my-9">Stay up-to-date with what we’re doing</h1>
 
@@ -167,12 +174,12 @@
             </div>
         </section>
 
-        <footer class="bg-pattern-blue-800 py-[60px] flex flex-col items-center space-y-8 md:flex-row justify-evenly items-start md:py-[30px]">
-            <div>
+        <footer class="bg-pattern-blue-800 py-[60px] flex flex-col items-center space-y-8 md:flex-row justify-evenly md:py-[30px]">
+            <div class="mt-auto">
                 <img src="../images/logo-footer.svg" alt="" class="w-[190px]">
             </div>
     
-            <ul class="space-y-4 text-center text-white md:flex flex-row items-center md:space-y-0 md:space-x-8">
+            <ul class="space-y-4 text-center text-white md:flex md:space-y-0 md:space-x-8">
                 <li><a href="">FEATURES</a></li>
                 <li><a href="">PRICING</a></li>
                 <li><a href="">CONTACT</a></li>
